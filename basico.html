@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico sobre HTML</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="principal">
+    <h1>LEARNING HTML-CSS</h1>
+    </header>
+    <section id="basico">
+      <header>
+        <h2>Lo básico sobre HTML</h2>
+      </header>
+      <article>
+        <hr>
+        <div class="esqueleto"> <a name="esqueleto"></a>
+        <p>Observa mi página web, ya sé que no se ve muy cool aún pero pronto lo hará. Este es el esqueleto de una página web,
+          el cual está formado por etiquetas que empiezan con &lt; y terminan con &gt;</p>
+        <ul>
+          <li><p>La primera linea DOCTYPE le indica al navegador que nuestra página está escrita en el html moderno y no en
+            el anticuado html.</p></li>
+          <li><p>&lt;html&gt; es nuestra etiqueta de inicio, y al igual que la mayoría de las etiquetas tiene una etiqueta
+            de cierre que incluye una barra, de la sig. manera: &lt;/html&gt; <br>
+            Sin embargo, no todas las etiquetas tienen cierre y más adelante aprenderás algunas de ellas.</p></li>
+          <li><p>La etiqueta &lt;head&gt; le ayuda al navegador a que reproduzca la página, pero en ella no hay
+            información que el usuario pueda visualizar. La etiqueta &lt;meta&gt; se usa para darle al navegador más
+            detalles de como reproducir nuestra página, y finalmente title de igual forma &lt;title&gt; es usado por el navegador
+            para mostrar el título de nuestra página.</p></li>
+          <li><p>Finalmente adentro de la etiqueta &lt;body&gt; es donde se encuentra el contenido que el usuario que visite
+          nuestra página va a visualizar.</p></li><br>
+        </ul>
+        </div>
+        <div class="esqueleto_img">
+          <img class="doctype" src="imagenes/esqueleto.png" alt="esqueleto HTML">
+        </div>
+        <br>
+      </article>
+    </section>
+
+      </section>
+        <section id="basico">
+          <ul>
+            <li>  <a name="titulos"></a>
+              <p>Ahora que ya conoces la estructura básica de una página html, vamos a darle contenido. Podemos empezar por
+                 agregar un título, y para esto tenemos 6 distintas etiquetas:</p>
+              <p id="ejemplos">
+                 &lt;h1&gt; &emsp; &lt;h2&gt; &emsp; &lt;h3&gt; &emsp; &lt;h4&gt; &emsp; &lt;h5&gt;
+                 &nbsp;&nbsp; &lt;h6&gt;</p>
+              <p>en donde &lt;h1&gt; es el título más grande y &lt;h6&gt; el más pequeño. Y recuerda siempre cerrar las etiquetas que encierren
+                algún tipo de texto.</p>
+            </li>
+            <li>  <a name="parrafo"></a>
+              <p>Seguramente queramos agregar algún bloque de texto después del título, y esto lo podemos hacer con la
+                 etiqueta &lt;p&gt; que nos ayuda a crear un párrafo en nuestra página desde que abre hasta que cierra:</p>
+              <p id="ejemplos">
+                &lt;p&gt;<em>contenido del párrafo&lt;/p&gt;</em></p>
+            </li>
+            <li>  <a name="imagen"></a>
+              <p>Bien, ya que sabemos como agregar texto a nuestra página sería bueno poder agregar una bonita
+                imagen para que el usuario vea de qué hablamos, y para esto usamos entonces la etiqueta &lt;img&gt;
+                que nos permite insertar una imagen a nuestra página.</p>
+              <p>esta etiqueta no tiene cierre, y tiene los atributos:
+                <ul type="square">
+                  <li>
+                  <p><b>src:</b> adentro de este atributo se proporciona el nombre de la imagen y si es necesario
+                    la carpeta en donde se encuentre.</p>
+                  </li>
+                  <li>
+                  <p><b>alt:</b> se utiliza este atributo para describir a la imagen en el navegador en caso de que
+                    esta no se muestre.</p>
+                  </li>
+                  <li>
+                  <p><b>width y height:</b> Estos atributos son usados para darle un ancho y largo a la imagen
+                    respectivamente.</p>
+                  </li>
+                </ul>
+              </p>
+              <p id="ejemplos">
+                &lt;img src=&quot;<em>nombre_de_imagen.pgn/jpg</em>&quot;
+                alt=&quot;<em>Descripción</em>&quot; width=&quot;<em>300</em>&quot; height=&quot;<em>150</em>&quot;&gt;</p>
+            </li>
+            <li>  <a name="vinculos"></a>
+              <p>Muchas veces queremos redirigir al usuario a otra página, ya sea nuestra o de alguien mas, y eso se hace
+                creando un vínculo con la etiqueta &lt;a&gt; &lt;/a&gt; que a su vez contiene el atributo <em>href</em>
+                que es utilizado para especificar la dirección del enlace, y entre las etiquetas de abierto y cerrado
+                se describe el nombre que quieras que tenga tu enlace, o puedes también poner una imagen:</p>
+              <p id="ejemplos">
+                &lt;a href=&quot;URL&quot;&gt; nombre_del_enlace &lt;/a&gt;
+              </p>
+            </li>
+            <li> <a name="lista"></a>
+              <p>Por último, una de las cosas más básicas de HTML son las listas. Si, las listas nos permiten tener ordenamiento
+                de algunas ideas que tengamos, por ejemplo, me gustaría hacer una lista de las novias que he tenido, bueno no porque
+                sino la lista probablemente estaría vacía, mejor quiero una de las cosas que me gustan, así:
+                <section id="izquierda">
+                  <ul type="circle">
+                    <li><p>Jugar Fútbol</p></li>
+                    <li><p>Programar</p></li>
+                    <li><p>La comida</p></li>
+                  </ul>
+                </section>
+                <section id="derecha">
+                <ol>
+                  <li><p>Leer</p></li>
+                  <li><p>hacer ejercicio</p></li>
+                  <li><p>estudiar</p></li>
+                </ol>
+              </section>
+              <p>Como puedes ver podemos hacer listas ordenadas y desordenadas; para las listas desordenadas usamos
+               dos etiquetas: la principal &lt;ul&gt; &lt;/ul&gt; y dentro de esta la etiqueta &lt;li&gt;&lt;/li&gt;
+               que es en donde va el contenido de cada viñeta:</p>
+              <p id="listas">
+                 &lt;ul&gt;<br>
+                 &emsp;&lt;li&gt;<em>contenido</em>&lt;/li&gt;<br>
+                 &emsp;&lt;li&gt;<em>contenido</em>&lt;/li&gt;<br>
+                 &lt;/ul&gt;
+               </p>
+               <p>En el caso de las listas ordenadas utilizamos la etiqueta &lt;ol&gt; &lt;/ol&gt; y la misma etiqueta
+                &lt;li&gt;&lt;/li&gt; para el contenido de la lista:</p>
+                <p id="listas">
+                   &lt;ol&gt;<br>
+                   &emsp;&lt;li&gt;<em>contenido</em>&lt;/li&gt;<br>
+                   &emsp;&lt;li&gt;<em>contenido</em>&lt;/li&gt;<br>
+                   &lt;/ol&gt;
+                 </p>
+            </li>
+          </ul>
+          <div class="regreso">
+            <a class="one" href="basico.html">
+            <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+          </div>
+        </section>
+
+    <footer id="page_footer">
+      <h4>&copy; 2022 Juan Sebastian Peña Angarita.</h4>
+    </footer>
+
+    <section id="sidebar">         <!--sidebar HTML-->
+      <br><nav>
+         <h3>HTML</h3>
+         <ul>
+ 	         <li class="interes">
+            <a href="index.html">
+             Inicio</a></li><br><br>
+           <li class="interes">
+            <a href="medio.html">
+            Nivel Medio</a></li><br><br>
+           <li class="interes">
+            <a href="otras.html">
+             Otras etiquetas</a></li><br><br>
+         </ul><br>
+      </nav>
+   </section>
+   <section id="sidebar">         <!--sidebar css-->
+     <br><nav>
+        <h3>CSS</h3>
+        <ul>
+          <li class="interes">
+           <a href="estilo.html">
+           Propiedades</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador">
+           Id</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador_dos">
+            Clases</a></li><br><br>
+        </ul><br>
+     </nav>
+  </section>
+  <section id="sidebar">         <!--sidebar más sobre-->
+    <br><nav>
+       <h3>Explora aquí</h3>
+       <ul>
+         <li class="interes">
+          <a href="#esqueleto">
+          Esqueleto</a></li><br><br>
+         <li class="interes">
+          <a href="#titulos">
+          Titulos</a></li><br><br>
+         <li class="interes">
+          <a href="#parrafo">
+           párrafo</a></li><br><br>
+         <li class="interes">
+          <a href="#imagen">
+             Imagen</a></li><br><br>
+          <li class="interes">
+           <a href="#vinculos">
+              vinculos</a></li><br><br>
+          <li class="interes">
+            <a href="#lista">
+               Listas</a></li><br><br>
+       </ul><br>
+    </nav>
+  </section>
+  </body>
+</html>

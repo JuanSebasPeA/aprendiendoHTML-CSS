@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Otras etiquetas</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="principal">
+    <h1>LEARNING HTML-CSS</h1>
+    </header>
+    <section id="otro">
+      <header>
+        <h2>Otras Etiquetas</h2>
+      </header>
+      <article class="one">
+        <hr>
+        <p>Aquí me gustaría enseñarte a usar algunas etiquetas adicionales que nos permitirán hacer más entendible y elegante nuestra página:</p>
+        <ul>
+          <a name="negritas"></a>
+          <li><p><b>&lt;b&gt; &lt;/b&gt;:</b> Es una etiqueta que nos permite resaltar un texto con negritas, lo único que tenemos que hacer es encerrar
+              el texto que queremos que esté en negritas entre la etiqueta de inicio y cierre:</p>
+              <p id="ejemplos">&lt;b&gt;texto en negritas&lt;/b&gt;</p>
+              <p id="ejemplos_dos"><b>texto con negritas</b></p><br>
+          </li>
+          <a name="enfasis"></a>
+          <li><p><b>&lt;em&gt; &lt;/em&gt;:</b> Es la etiqueta que nos permite hacer énfasis en nuestro texto y la usamos igual que &lt;b&gt;:</p>
+              <p id="ejemplos">&lt;em&gt;texto con énfasis&lt;/em&gt;</p>
+              <p id="ejemplos_dos"><em>texto con énfasis</em></p><br>
+          </li>
+          <a name="linea"></a>
+          <li><p><b>&lt;hr&gt;:</b> nos sirve para crear una linea horizontal de extremo a extremo, y no tiene etiqueta de cierre ya que no encierra
+              ningún texto. Usualmente la usamos para separar un título de nuestro contenido:</p>
+              <p id="ejemplos">&lt;hr&gt;
+              </p>
+              <hr>
+          </li>
+          <a name="salto"></a>
+          <li><p><b>&lt;br&gt;:</b> Esta etiqueta si que la usamos mucho, pues constantemente queremos que algún párrafo o bloque texto de nuestra
+            página haga un salto de linea; bueno, pues para esto sirve esta etiqueta, que como puedes imaginar tampoco tiene cierre, ya que no encierre
+            algún texto:
+          </p>
+          <p id="ejemplos">primera linea de texto&lt;br&gt;segunda linea de texto</p>
+          <p id="ejemplos_dos">primera linea texto<br>segunda linea de texto</p><br>
+          </li>
+          <a name="sub"></a>
+          <li><p><b>&lt;u&gt; &lt;/u&gt;:</b> Es una etiqueta que nos ayuda a subrayar un determinado texto de nuestra página:</p>
+              <p id="ejemplos">&lt;u&gt;texto subrayado&lt;/u&gt;</p>
+              <p id="ejemplos_dos"><u>texto subrayado</u></p><br>
+          </li>
+          <a name="eliminado"></a>
+          <li><p><b>&lt;del&gt; &lt;/del&gt;:</b> Si tienes una página donde promociones algún producto esta etiqueta te será muy útil, pues
+              da la ilusión de eliminar una palabra o texto. Posiblemente lo puedas usar para cambiar un precio:</p>
+              <p id="ejemplos">$&lt;del&gt;1.900&lt;/del&gt;<br>$1.500</p>
+              <p id="ejemplos_dos">$<del>1.900</del><br>$1.500</p><br>
+          </li>
+          <a name="grande"></a>
+          <li><p><b>&lt;big&gt; &lt;/big&gt;:</b> Nos permite hacer el texto dentro de la etiqueta más grande:</p>
+              <p id="ejemplos">&lt;big&gt;texto más grande&lt;/big&gt;</p>
+              <p id="ejemplos_dos"><big>texto más grande</big></p><br>
+          </li>
+          <a name="peque"></a>
+          <li><p><b>&lt;small&gt; &lt;/small&gt;:</b> Nos permite hacer el texto dentro de la etiqueta más pequeño:</p>
+              <p id="ejemplos">&lt;small&gt;texto más pequeño&lt;/small&gt;</p>
+              <p id="ejemplos_dos"><small>texto más pequeño</small></p><br>
+          </li>
+        </ul>
+        <p>Por último me gustaría darte algunos tips que te ayudarán a realizar de mejor manera tu página web:</p>
+        <ol>
+          <li><p>Siempre es importante tener indentado nuestro código, es decir, si una etiqueta está contenida en otra debe verse
+              reflejado en el código, por ejemplo:</p>
+              <p id="ejemplos">&lt;body&gt;<br>&nbsp;&lt;ul&gt; <br>
+                &emsp; &emsp; &emsp; &nbsp;&lt;lil&gt;&lt;/li&gt; <br> &emsp; &emsp; &emsp; &nbsp;&lt;lil&gt;&lt;/li&gt;<br>
+                &nbsp;&lt;/ul&gt;<br>
+                &lt;body&gt;
+              </p>
+          </li>
+          <li><p>Escribe las etiquetas en minúsculas, ya que será mucho más fácil de leer, y nos ayuda a tener un estilo fijo.</p></li>
+          <li><p>Recuerda siempre cerrar todas las etiquetas que tengan cierre, sino imaginate que se me olvide cerrar un enlace y todo
+              lo que escribí después se vuelva un enlace, sería un desastre!</p></li>
+          <li><p>Mi último consejo es que experimentes con todas estas etiquetas y hagas tantas páginas como puedas, agregando estilo a ellas
+              con <a href="estilo.html"><em>propiedades CSS.</em></a></p></li>
+        </ol>
+        <br>
+        <div class="regreso">
+          <a class="one" href="otras.html">
+          <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+        </div>
+        <br>
+      </article>
+    </section>
+
+    <footer id="page_footer">
+      <h4>&copy; 2022 Juan Sebastian Peña Angarita.</h4>
+    </footer>
+
+    <section id="sidebar">         <!--sidebar HTML-->
+      <br><nav>
+         <h3>HTML</h3>
+         <ul>
+ 	         <li>
+            <a href="index.html">
+            Inicio</a></li><br><br>
+           <li>
+            <a href="basico.html">
+            Lo básico</a></li><br><br>
+           <li>
+            <a href="medio.html">
+             Nivel medio</a></li><br><br>
+         </ul><br>
+      </nav>
+   </section>
+   <section id="sidebar">         <!--sidebar css-->
+     <br><nav>
+        <h3>CSS</h3>
+        <ul>
+          <li class="interes">
+           <a href="estilo.html">
+           Propiedades</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador">
+           Id</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador_dos">
+            Clases</a></li><br><br>
+        </ul><br>
+     </nav>
+  </section>
+  <section id="sidebar">         <!--sidebar más sobre-->
+    <br><nav>
+       <h3>Explora aquí</h3>
+       <ul>
+         <li class="interes">
+          <a href="#negritas">
+          Negritas</a></li><br><br>
+         <li class="interes">
+          <a href="#enfasis">
+          Énfasis</a></li><br><br>
+         <li class="interes">
+          <a href="#linea">
+           Linea horizontal</a></li><br><br>
+         <li class="interes">
+          <a href="#salto">
+            Salto de linea</a></li><br><br>
+         <li class="interes">
+          <a href="#sub">
+             Subyarado</a></li><br><br>
+         <li class="interes">
+           <a href="#eliminado">
+              Texto borrado</a></li><br><br>
+          <li class="interes">
+            <a href="#grande">
+               Texto grande</a></li><br><br>
+          <li class="interes">
+            <a href="#peque">
+               Texto chico</a></li><br><br>
+       </ul><br>
+    </nav>
+  </section>
+  </body>
+</html>

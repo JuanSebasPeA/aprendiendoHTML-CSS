@@ -1,0 +1,398 @@
+body {
+  background: #3E193F;
+  font-family: "helvetica", "times new ramn", serif;
+}
+
+.contenedor {
+  width: 100%;
+}
+
+.principal {
+  width: 100%;
+}
+
+.principal h1 {
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  text-shadow: 5px 5px 10px white;
+  border: 3px groove #ECD1F1;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 1%;
+}
+
+section#intro, section#basico, section#medio, section#otro, section#medio_dos, section#propi, section#ides, section#clases {
+  background-color: white;
+  width: 80%;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 32px;
+  text-shadow: 3px 3px 8px black;
+}
+
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  font-size: 23px;
+  text-align: left;
+  margin-right: 10px auto;
+  font-style: italic;
+  font-weight: bold;
+}
+
+section#sidebar {
+  text-align: left;
+  background: #F2DBF7 ;
+  width: 16%;
+  line-height: 16px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  border: 3px inset #ECD1F1;
+}
+
+h3 {
+  text-align: center;
+  font-size: 23px;
+  border: 1px solid #DFABE8;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 5px;
+}
+
+section#sidebar a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #900C3F;
+}
+
+section#sidebar a:hover {
+  background: #FFFFFF;
+  border: 1px dashed #483D4A;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+p {
+  width: 96%;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 30px;
+}
+
+section#intro img {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+
+section#intro .imag_dos {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+
+img:hover {
+  border: 1px outset #483D4A;
+}
+
+section#intro .formas {
+  list-style: circle;
+  font-size: 20px;
+}
+
+section#intro .formas li {
+  line-height: 30px;
+}
+
+section#intro .inicio {
+  width: 40px;
+  height: 20px;
+}
+
+.regreso {
+  text-align: right;
+  margin: 20px;
+  border: none;
+}
+
+.inicio {
+  text-align: right;
+}
+
+.one:hover {
+  border: 0px;
+}
+
+.inicio:hover {
+  border: none;
+  text-align: right;
+}
+
+section#basico .esqueleto {
+  width: 51%;
+  float: left;
+  margin-right: 0px;
+}
+
+section#basico .esqueleto_img {
+  text-align: right;
+  width: 45%;
+  height: auto;
+  margin-right: 20px;
+  float: right;
+  line-height: 0px;
+}
+
+section#basico .doctype {
+  width: 100%;
+  height: auto;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+#ejemplos {
+  text-align: center;
+  -webkit-text-stroke: 1px #FF5733;
+  color: transparent;
+}
+
+#ejemplos_dos {
+  text-align: center;
+}
+
+#listas {
+    text-align: left;
+    margin-left: 35%;
+    -webkit-text-stroke: 1px #FF5733;
+    color: transparent;
+}
+
+section#basico section#izquierda {
+  text-align: center;
+  display: block;
+  float: left;
+  width: 50%;
+  line-height: 0px;
+}
+
+section#izquierda ul {
+  display: inline-block;
+}
+
+section#basico section#derecha {
+  float: right;
+  margin-left: 0px;
+  width: 50%;
+  line-height: 0px;
+}
+
+section#medio section#izquierda {
+  text-align: center;
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: 40%;
+  margin-bottom: 30px;
+}
+
+section#izquierda table {
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+  height: 320px;
+  border-collapse: collapse;
+}
+
+table tr, td, th {
+  font-size: 22px;
+}
+
+section#derecha #ejemplos {
+  margin-right: 120px;
+  text-align: left;
+  width: 60%;
+  margin-top: 0px;
+}
+
+section#medio section#derecha {
+  float: right;
+  margin-left: 0px;
+  margin-right: 20px;
+  width: 50%;
+  height: 430px;
+  line-height: 0px;
+}
+
+section#medio_dos section#derecha {
+  text-align: left;
+  float: right;
+  width: 75%;
+  height: 310px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+section#medio_dos section#izquierda {
+  text-align: center;
+  float: left;
+  width: 25%;
+  height: 310px;
+  margin-bottom: 0px;
+}
+
+section#medio_dos section#derecha #ejemplos {
+  margin-left: 140px;
+}
+
+.botones {
+  text-align: center;
+  line-height: 150px;
+}
+
+
+li {
+  margin-right: 10px;
+}
+
+section#propi #ejemplos {
+  -webkit-text-stroke: 1px #464EF0;
+  color: transparent;
+  text-align: left;
+  margin-left: 500px;
+}
+
+section#ides #ejemplos {
+  -webkit-text-stroke: 1px #26B712;
+  color: transparent;
+  text-align: left;
+  margin-left: 500px;
+}
+
+section#clases #ejemplos {
+  -webkit-text-stroke: 1px #A22230;
+  color: transparent;
+  text-align: left;
+  margin-left: 500px;
+}
+
+footer#page_footer {
+color: white;
+ width: 100%;
+ line-height: 0px;
+ margin-right: 15px;
+ float: right;
+ text-align: right;
+ font-family: "monospace", serif;
+}
+
+@media screen and (max-width:900px ){
+  .principal {
+    text-align: center;
+  }
+  .principal h1 {
+      width: 80%;
+      font-size: 150%;
+      margin-left: 7%;
+      margin-right: 0px;
+      text-align: center;
+  }
+
+  section {
+    width: 100%;
+  }
+  section#sidebar {
+    display: flex;
+    width: 90%;
+  }
+  section#basico .esqueleto {
+    width: 100%;
+    margin: 0px;
+  }
+  section#basico .doctype {
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  section#basico .esqueleto_img {
+    width: 90%;
+  }
+  section#basico section#izquierda p {
+    font-size: 90%;
+  }
+  section#basico section#derecha p {
+    font-size: 90%;
+  }
+  section#basico #ejemplos, #listas {
+    font-size: 96%;
+  }
+ table td, th {
+   font-size: 90%;
+ }
+ section#medio section#izquierda {
+    width: 100%;
+ }
+ section#medio section#derecha {
+   width: 100%;
+   height: auto;
+   text-align: center;
+ }
+ section#medio section#derecha #ejemplos{
+   font-size: 96%;
+   margin-left: 30%;
+ }
+  section#izquierda table {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+  }
+  section#medio_dos section#derecha {
+    width: 100%;
+    text-align: left;
+    margin: 0px auto;
+    margin-bottom: 12%;
+    line-height: 0px;
+  }
+  section#medio_dos section#derecha #ejemplos {
+      text-align: left;
+      font-size: 96%;
+      display: inline;
+      margin: 0px;
+      margin-bottom: 0px;
+  }
+
+  section#medio_dos section#izquierda {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  section#propi #ejemplos {
+    font-size: 96%;
+    text-align: left;
+    margin-left: 20%;
+  }
+  section#ides #ejemplos {
+    font-size: 96%;
+    text-align: left;
+    margin-left: 20%;
+  }
+  section#clases #ejemplos {
+    font-size: 96%;
+    text-align: left;
+    margin-left: 20%;
+  }
+}

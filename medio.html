@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML nivel medio</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="principal">
+    <h1>LEARNING HTML-CSS</h1>
+    </header>
+    <section id="medio">
+      <header>
+        <h2>HTML nivel medio</h2>
+      </header>
+      <article class="one">
+        <hr>
+        <p>Ahora que ya conoces la estructura de una página html y algunas etiquetas básicas es momento de aprender etiquetas
+          más avanzadas.</p>
+        <ul> <a name="tabla"></a>
+          <li>
+            <p><b>Tablas: </b>Las tablas nos sirven para dar estructura a nuestra página y organizar mejor nuestra información.</p>
+            <p>Podemos crear una tabla con las etiquetas: &lt;table&gt; que indica el inicio de nuestra tabla, &lt;tr&gt; que usamos
+            para crear una nueva fila (de izquierda a derecha), &lt;td&gt; para crear una nueva celda en la fila, es decir una columna.
+            También podemos usar la etiqueta &lt;th&gt; en lugar de &lt;td&gt; para definir las celdas que actúan como título.</p>
+            <p>Por ejemplo, si deseo hacer una tabla acerca de mis mascotas:</p>
+            </li>
+            <section id="izquierda">
+              <table border="1">
+                <tr>
+                  <th>Mascota</th>
+                  <th>Nombre</th>
+                  <th>Color</th>
+                </tr>
+                <tr>
+                  <td>Perro</td>
+                  <td>Toby</td>
+                  <td>Gris</td>
+                </tr>
+                <tr>
+                  <td>Conejo</td>
+                  <td>Chispitas</td>
+                  <td>Blanco</td>
+                </tr>
+              </table>
+            </section>
+            <section id="derecha">
+              <p id="ejemplos">
+               &lt;table border="1"&gt;<br>
+                &lt;tr&gt;<br>
+                &emsp;&lt;th&gt;Mascota&lt;/th&gt;<br>
+                &emsp;&lt;th&gt;Nombre/th&gt;<br>
+                &emsp;&lt;th>Color&lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr><br>
+                &emsp;&lt;td>Perro&lt;/td&gt;<br>
+                &emsp;&lt;td>Toby&lt;/td&gt;<br>
+                &emsp;&lt;td>Gris&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                ...<br>
+               &lt;/table&gt;<br>
+            </section><br>
+            </p>
+        </ul>
+   </section>
+   <section id="medio_dos">
+        <ul><a name="formulario"></a>
+          <li>
+            <p><b>Formularios: </b>Podemos agregar formularios a nuestra página para que el usuario tenga un poco de interacción.</p>
+            <p>Para crear un formulario primero usamos la etiqueta &lt;form&gt; &lt;/form&gt; la cual abre y cierra la plantilla de
+              nuestro formulario y a la vez recoge el contenido del mismo.</p>
+            <p>Adentro de la etiqueta principal van distintos atributos, como:
+              <ul type="square">
+                <li>
+                  <p><b>action:</b> Indica el programa del servidor a donde se va a dirigir la información recolectada del formulario
+                  </p>
+                </li>
+                <li>
+                  <p><b>method:</b> Indica el método por el cual se transfieren los datos de nuestro formulario hacia la dirección indicada
+                    en el atributo <em>action</em>, y existen dos tipos de métodos:
+                    <ol>
+                      <li>
+                        <p><b>get:</b> Este es el método por defecto.</p>
+                      </li>
+                      <li>
+                        <p><b>post:</b> Se usa en los casos en donde hay que pasar mucho información.</p>
+                      </li>
+                    </ol>
+                  </p>
+                </li>
+
+            </ul></p>
+            <p>Para definir los elementos de un formulario usamos la etiqueta &lt;input&gt; que a su vez contiene el atributo <em>type</em>
+              que puede ser:
+              <ul type="square">
+                <li><p><b>text:</b> es una caja de texto</p></li>
+                <li><p><b>radio:</b> es un botón de radio</p></li>
+                <li><p><b>checkbox:</b> caja para rellenar una opción</p></li>
+                <li><p><b>button:</b> es un botón</p></li>
+                <li><p><b>image:</b> usa una imagen como botón submit</p></li>
+                <li><p><b>submit:</b> botón para enviar el formulario</p></li>
+                <li><p><b>reset:</b> reinicia el formulario</p></li>
+                <li><p><b>password:</b> caja de texto que no muestra los caracteres escritos</p></li>
+                <li><p><b>hidden:</b> es un control oculto</p></li>
+                <li><p><b>file:</b> permite subir archivos</p></li>
+              </ul></p>
+            <p>Todo esto es importante, pero en ocasiones la teoría resulta ser algo pesada y aburrida, y por eso vamos a practicar todo lo visto
+              sobre formularios para que quede más claro.</p>
+            <p>Observa los siguientes formularios del lado izquierdo y el uso de cada etiqueta del lado derecho:</p><br>
+            <form action="mailto:sebasjuansebab@gmail.com" method="get">
+            <section id="izquierda">
+                <br><br><br>
+                Nombre: <input type="text" name="nombre" size="20"  maxlength="20" /><br><br>
+                Apellido: <input type="text"  name="apellido" size="20" maxlength="20" />
+            </section>
+            <section id="derecha">
+              <p id="ejemplos">
+                &lt;form action=&quot;mailto:nombre_de_email &quot; method=&quot;get&quot;&gt;&lt;br&gt;<br>
+                  Nombre: &lt;input type=&quot;text&quot; name=&quot;nombre&quot; size=&quot;20&quot;  maxlength=&quot;20&quot; /&gt;&lt;br&gt;<br>
+                  Apellido: &lt;input type=&quot;text&quot;  name=&quot;apellido&quot; size=&quot;20&quot; maxlength=&quot;20&quot; /&gt;<br>
+                &lt;/form&gt;
+              </p>
+            </section>
+            <section id="izquierda">
+                <br><br><br>
+                <legend><b><big>Qué te ha parecido el tutorial?</big></b></legend><br>
+                <input type="radio" name="opinion" value="genial"  checked="checked"/> Muy bueno <br><br>
+                <input type="radio" name="opinion" value="bueno" />  Bueno <br><br>
+                <input type="radio" name="opinion" value="mejorable"  /> Mejorable <br>
+            </section>
+            <section id="derecha">
+              <p id="ejemplos">
+                &lt;form action=&quot;mailto:nombre_de_email &quot; method=&quot;get&quot;&gt;&lt;br&gt;<br>
+                 &lt;legend&gt;Qué te ha parecido el tutorial?&lt;/legend&gt;<br>
+                 &lt;input type="radio" name="opinion" value="genial" checked="checked"/&gt;Muy bueno<br>
+                 &lt;input type="radio" name="opinion" value="bueno" /&gt;Bueno <br>
+                 &lt;input type="radio" name="opinion" value="mejorable" /&gt;Mejorable <br>
+                &lt;/form&gt;
+              </p>
+            </section>
+              <br>
+              <div class="botones">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Reinicio">
+              </div>
+            </form>
+          </li>
+          <li>
+            <p>Como puedes ver, adentro de cada etiqueta &lt;input&gt; hay algunos atributos que no hemos visto, pero son muy importantes,
+              así que vamos a verlos:</p>
+              <ul type="square">
+                <li><p><b>name:</b> le da nombre a nuestro elemento y ayuda a identificarlo.</p></li>
+                <li><p><b>value:</b> le da un valor a nuestro elemento y se muestra cuando el documento es cargado.</p></li>
+                <li><p><b>checked:</b> este atributo nos permite seleccionar una opción por defecto.</p></li>
+                <li><p><b>size:</b> marca los caracteres permitidos dentro de un cuadro de texto.</p></li>
+                <li><p><b>maxlength:</b> es la longitud máxima de caracteres que se ven en el cuadro de texto.</p></li>
+              </ul>
+          </li>
+        </ul>
+        <br>
+        <br>
+      </article>
+      <div class="regreso">
+        <a class="one" href="medio.html">
+        <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+      </div>
+    </section>
+
+    <footer id="page_footer">
+      <h4>&copy; 2022 Juan Sebastian Peña Angarita.</h4>
+    </footer>
+
+    <section id="sidebar">         <!--sidebar HTML-->
+      <br><nav>
+         <h3>HTML</h3>
+         <ul>
+ 	         <li>
+            <a href="index.html">
+            Inicio</a></li><br><br>
+           <li>
+            <a href="basico.html">
+            Lo básico</a></li><br><br>
+           <li>
+            <a href="otras.html">
+             Otras etiquetas</a></li><br><br>
+         </ul><br>
+      </nav>
+   </section>
+   <section id="sidebar">         <!--sidebar css-->
+     <br><nav>
+        <h3>CSS</h3>
+        <ul>
+          <li class="interes">
+           <a href="estilo.html">
+           Propiedades</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador">
+           Id</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador_dos">
+            Clases</a></li><br><br>
+        </ul><br>
+     </nav>
+  </section>
+  <section id="sidebar">         <!--sidebar más sobre-->
+    <br><nav>
+       <h3>Más sobre</h3>
+       <ul>
+         <li class="interes">
+          <a href="#tabla">
+          Tablas</a></li><br><br>
+         <li class="interes">
+          <a href="#formulario">
+          Formulario</a></li><br><br>
+       </ul><br>
+    </nav>
+  </section>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header class="principal">
+    <h1>LEARNING HTML-CSS</h1>
+    </header>
+    <section id="propi">
+      <header>
+        <h2>Propiedades CSS</h2>
+      </header>
+      <article class="one">
+        <hr>
+        <p>En este apartado vas a aprender algunas propiedades css que puedes aplicar a tu página html, pero primero aprenderemos la sintaxis de css:</p>
+        <p>Primero escribimos el elemento (selector) al que le queremos dar estilo seguido de una par de llaves, adentro de las llaves se escribe
+           la propiedad css, dos puntos y el valor de la propiedad que termina con ; de la siguiente forma:</p>
+        <p id="ejemplos">body { <br>&emsp; background-color: blue;<br>}</p><br>
+        <p>Pero espera, no sería bueno poder definir la misma propiedad para varios elementos? bien, eso lo podemos hacer simplemente separando
+           los elementos con una coma(,).</p>
+        <p>Ahora que conocemos la sintaxis de css estamos listos para conocer algunas de las propiedades más utilizadas:</p>
+        <ul>
+          <li><p><b>font-size: </b>esta propiedad nos permite cambiar el tamaño de un texto. Podemos especificar el tamaño en pixels o ems,
+              por ejemplo si quisiera cambiar el tamaño de los párrafos de mi página:</p>
+              <p id="ejemplos">p { <br>&emsp; font-size: 20px;<br>}</p>
+          </li><br>
+          <li><p><b>color: </b>La propiedad color nos ayuda a cambiar el color de la fuente del elemento. el valor puede escribirse con el nombre
+              del color en inglés, con código hexadecimal como: #FF0000 (rojo) o usando rgb que usa los parámetros(red,green,blue):
+              por ejemplo si quisiera cambiar el tamaño de los párrafos de mi página:</p>
+              <p id="ejemplos"> h1 { <br>&emsp; color: purple;<br>}</p>
+          </li><br>
+          <li><p><b>background-color: </b>Define el color de fondo de nuestro elemento, y se puede especificar con los mismo parámetros que color:</p>
+              <p id="ejemplos">p, h3 { <br>&emsp; background-color: green; 20px;<br>}</p>
+          </li><br>
+          <li><p><b>width y height: </b>Definen el ancho y alto de un elemento respectivamente, su valor se puede especificar en px, em ó en porcentaje.
+              por ejemplo si deseo ajustar el tamaño de una imagen:</p>
+              <p id="ejemplos">img { <br>&emsp; width: 90%;<br>&emsp; height: 100px;<br>}</p>
+          </li>
+          <li><p><b>padding: </b>Define la distancia desde el borde del elemento hasta su contenido:</p>
+              <p id="ejemplos">table { <br>&emsp; padding: 5px;<br>}</p>
+          </li><br>
+          <li><p><b>margin: </b>Define la distancia entre un elemento y otro:</p>
+              <p id="ejemplos">img { <br>&emsp; margin: 25px;<br>}</p>
+          </li><br>
+        </ul>
+        <p>Estas son solo algunas de las muchas propiedades que nos brinda CSS, y recuerda que lo más importante para que te vuelvas un experto
+           es con la práctica, así que busca más información en la web y manos a la obra!</p>
+      </article>
+      <br><br>
+      <div class="regreso">
+        <a class="one" href="estilo.html">
+        <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+      </div>
+    </section>
+
+    <section id="ides"> <a name="identificador"></a>
+      <header>
+        <h2>Selectores ID</h2>
+      </header>
+      <article class="one">
+        <hr>
+        <p>Con css podemos aplicar diferentes propiedades de estilo a todos los elementos que queramos, pero qué pasa si solo quiero agregar
+           una propiedad a un párrafo en especial y no a todos?, o cambiar algo de una imagen y no de todas? ¿Te imaginas que hubiera una
+           solución para esto? espera, si la hay!</p>
+        <p>Para poder aplicar estilo a un elemento en específico usamos el selector &quot;id&quot;, y la forma en que funciona es la siguiente:</p>
+        <ol>
+          <li><p>en nuestro documento html buscamos la etiqueta a la que queremos aplicar estilo.</p>
+          </li>
+          <li><p>Agregamos id=&quot;nombre_que_queramos&quot; adentro de la etiqueta para identificarla.</p>
+          </li>
+          <li><p>En nuestro css, en lugar de colocar el nombre de la etiqueta escribimos # y el nombre de nuestro id.</p>
+          </li>
+        </ol>
+        <p>por ejemplo:</p>
+        <p><b>En el documento HTML:</b></p>
+        <p id="ejemplos">&lt;p id=&quot;prueba&quot;&gt;</p>
+        <p><b>En el documento CSS:</b></p>
+        <p id="ejemplos">#prueba { <br>&emsp; color: red;<br>}</p><br>
+        <p>Una de las cosas más importantes que tienes que saber es que el nombre de nuestro selector NO puede empezar con números, NO puede
+           contender espacios en blanco y NO puede tener la letra ñ.</p>
+        <p>Con esto estarás preparado para aplicar selector a tu página, porque es una buena forma de afectar un elemento HTML específico.</p>
+      </article>
+      <br><br>
+      <div class="regreso">
+        <a class="one" href="estilo.html">
+        <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+      </div>
+    </section>
+
+    <section id="clases"> <a name="identificador_dos"></a>
+      <header>
+        <h2>Clases</h2>
+      </header>
+      <article class="one">
+        <hr>
+        <p>Las clases al igual que los selectores id nos permiten aplicar un estilo en nuestro css a uno o varios elementos específicos de
+           nuestro HTML. Incluso podemos hacer que varios elementos tengan la misma clase y que se vean afectados de la misma manera.</p>
+        <p>Para agregar una clase:</p>
+        <ol>
+          <li><p>en nuestro documento html buscamos la o las etiquetas a la que queremos aplicar estilo.</p>
+          </li>
+          <li><p>Agregamos class=&quot;nombre_que_queramos&quot; adentro de la etiqueta para identificarla.</p>
+          </li>
+          <li><p>En este caso, En nuestro documento css en lugar de colocar el nombre de la etiqueta escribimos . y el nombre de nuestra clase.</p>
+          </li>
+        </ol>
+        <p>Observa Cómo: </p>
+        <p><b>En el documento HTML:</b></p>
+        <p id="ejemplos">&lt;h2 class=&quot;test&quot;&gt;</p>
+        <p id="ejemplos">&lt;li class=&quot;test&quot;&gt;</p>
+        <p><b>En el documento CSS:</b></p>
+        <p id="ejemplos">.test { <br>&emsp; background-color: orange;<br>}</p><br>
+        <p>Recuerda que los nombres de los selectores tienen restricciones como NO empezar por números, NO incluir la letra ñ y NO
+           contener espacios en blanco; sin embargo, puede sustituir los espacios en blanco por _(guión bajo), y trata de NO usar palabras
+           reservadas o nombres de etiquetas HTML.</p>
+      </article>
+      <br><br>
+      <div class="regreso">
+        <a class="one" href="estilo.html">
+        <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+      </div>
+    </section>
+
+    <footer id="page_footer">
+      <h4>&copy; 2022 Juan Sebastian Peña Angarita.</h4>
+    </footer>
+
+    <section id="sidebar">         <!--sidebar HTML-->
+      <br><nav>
+         <h3>HTML</h3>
+         <ul>
+ 	         <li>
+            <a href="index.html">
+            Inicio</a></li><br><br>
+           <li>
+            <a href="basico.html">
+            Lo básico</a></li><br><br>
+           <li>
+            <a href="medio.html">
+             Nivel medio</a></li><br><br>
+           <li>
+             <a href="otras.html">
+              Otras etiquetas</a></li><br><br>
+         </ul><br>
+      </nav>
+   </section>
+   <section id="sidebar">         <!--sidebar css-->
+     <br><nav>
+        <h3>CSS</h3>
+        <ul>
+          <li class="interes">
+           <a href="estilo.html">
+           Propiedades</a></li><br><br>
+          <li class="interes">
+           <a href="#identificador">
+           Id</a></li><br><br>
+          <li class="interes">
+           <a href="#identificador_dos">
+            Clases</a></li><br><br>
+        </ul><br>
+     </nav>
+  </section>
+
+  </body>
+</html>

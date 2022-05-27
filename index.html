@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutorial html-css</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="contenedor">
+    <header class="principal">
+      <h1>LEARNING HTML - CSS</h1>
+    </header>
+    <section id="intro">  <a name="primera_intro"></a>
+      <header>
+        <h2>Introducción a HTML</h2>
+      </header>
+      <article class="one">
+        <hr>
+        <p>Bienvenido a <b>LEARNING HTML-CSS</b>, el tutorial para volverse un experto en la web, bueno...Quizás no un experto,
+          pero después de esto estarás preparado para hacer tu primera página web, como la siguiente: </p>
+          <img src="imagenes/introHTML.png" alt="Página web">
+        <p>Hablemos de la web, esto que seguramente estás usando justo ahora. De manera sencilla podemos describir la web
+          como una gran red de computadoras conectadas entre si. Y entonces, ¿Para qué utilizamos los sitios web? bueno,
+          al inicio los investigadores y científicos lo usaban para compartir su trabajo, pero en la actualidad lo usamos
+          para cualquier cosa, como para tener un sitio web de fotos, una red social, un sitio web con el cual
+          puedes planear tus vacaciones, un sitio web de noticias o un increíbe sitio web que enseñe como usar HTML, como este!</p>
+        <p><b>¿Qúe sitio  web te gustaría que hubiera?</b> Bueno en realidad ya no importa, porque aquí
+          vas a aprender a hacerlo usando HTML, el cual es un Lenguaje de marcado que nos permite crear una página y desplegarla
+          en el navegador.</p><br>
+      </article>
+    </section>
+
+    <section id="intro"> <a name="segunda_intro"></a>
+      <header>
+        <h2>Introducción a CSS</h2>
+      </header>
+      <hr>
+      <p>OK la página anterior es un buen ejemplo de página web, pero podemos darle algún color o darle un
+       mejor estilo? bien, pues la respuesta es si; lo podemos hacer con hojas de estilo o CSS(cascading style sheets),
+       así nuestra<br> página anterior se podrá ver así:</p>
+       <img class="imag_dos" src="imagenes/introHTML2.png" alt="Página web">
+      <br>
+      <p>CSS nos permite describir la forma en la que se presentan los elementos HTML en una página web. Podemos
+         insertar las hojas de estilo a nuestro HTML de tres formas:<br>
+        <ul class="formas" style="square">
+          <li><b>Embebida:</b> La hoja de estilo se incrusta usando el elemento &lt;style&gt; adentro de la etiqueta
+             &lt;head&gt;, la cual podrás aprender a usar en <a href="basico.html"><em>lo  básico.</em></a></li>
+          <li><b>En línea:</b> Con esta forma aplicamos estilo a un elemento de forma individual usando
+             el atributo <em>style</em> adentro de la etiqueta que queremos estilizar.<br>
+             Por ejemplo: &lt;body style =&quot;background-color: blue;&quot;&gt </li>
+          <li><b>Externa:</b> Se trata de enlazar una hoja de estilo externa a nuestro documento HTML, y esto lo
+             lo podemos hacer con el elemento &lt;link&gt; de la siguiente manera:<br>
+             &lt;link rel=&quot;stylesheet&quot; href=&quot;nombre_del_documento.css&quot;&gt;</li>
+      </p><br>
+      <div class="regreso">
+        <a class="one" href="index.html">
+        <img class="inicio" src="imagenes/inicio.png" alt="inicio" width="40" height="20"></a>
+      </div>
+    </section>
+    <footer id="page_footer">
+      <h4>&copy; 2022 Juan Sebastian Peña Angarita.</h4>
+    </footer>
+
+    <section id="sidebar">         <!--sidebar HTML-->
+      <br><nav>
+         <h3>HTML</h3>
+         <ul>
+ 	         <li>
+            <a href="basico.html">
+            Lo básico</a></li><br><br>
+           <li>
+            <a href="medio.html">
+            Nivel Medio</a></li><br><br>
+           <li>
+            <a href="otras.html">
+             Otras etiquetas</a></li><br><br>
+         </ul><br>
+      </nav>
+   </section>
+   <section id="sidebar">         <!--sidebar css-->
+     <br><nav>
+        <h3>CSS</h3>
+        <ul>
+          <li class="interes">
+           <a href="estilo.html">
+           Propiedades</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador">
+           Id</a></li><br><br>
+          <li class="interes">
+           <a href="estilo.html#identificador_dos">
+            Clases</a></li><br><br>
+        </ul><br>
+     </nav>
+  </section>
+  <section id="sidebar">         <!--sidebar más sobre-->
+    <br><nav>
+       <h3>Explora aquí</h3>
+       <ul>
+         <li class="interes">
+          <a href="#primera_intro">
+          intro html</a></li><br><br>
+         <li class="interes">
+          <a href="#segunda_intro">
+          intro css</a></li><br><br>
+       </ul><br>
+    </nav>
+  </section>
+  </div>
+  </body>
+</html>
