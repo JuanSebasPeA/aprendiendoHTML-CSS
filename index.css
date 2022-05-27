@@ -5,6 +5,7 @@ body {
 
 .contenedor {
   width: 100%;
+  margin: 0px auto;
 }
 
 .principal {
@@ -40,9 +41,9 @@ header h2 {
 nav ul li {
   list-style: none;
   display: inline;
-  font-size: 23px;
+  font-size: 130%;
   text-align: left;
-  margin-right: 10px auto;
+  margin-right: 2% auto;
   font-style: italic;
   font-weight: bold;
 }
@@ -59,7 +60,7 @@ section#sidebar {
 
 h3 {
   text-align: center;
-  font-size: 23px;
+  font-size: 130%;
   border: 1px solid #DFABE8;
   margin-left: 40px;
   margin-right: 40px;
@@ -85,11 +86,11 @@ a:visited {
 }
 
 p {
-  width: 96%;
-  font-size: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  line-height: 30px;
+  width: 90%;
+  font-size: 118%;
+  margin-left: 3%;
+  margin-right: 3%;
+  line-height: 165%;
 }
 
 section#intro img {
@@ -181,20 +182,28 @@ section#basico .doctype {
 }
 
 section#basico section#izquierda {
-  text-align: center;
-  display: block;
+  text-align: left;
   float: left;
+  margin-bottom: 6%;
   width: 50%;
+  height: 70%;
   line-height: 0px;
 }
 
 section#izquierda ul {
-  display: inline-block;
+  display: block;
+  margin: 0px auto;
+  margin-left: 50%;
+}
+
+section#derecha ul {
+  margin: 0px auto;
 }
 
 section#basico section#derecha {
   float: right;
   margin-left: 0px;
+  margin-bottom: 6%;
   width: 50%;
   line-height: 0px;
 }
@@ -204,8 +213,7 @@ section#medio section#izquierda {
   display: inline-block;
   float: left;
   width: 40%;
-  height: 40%;
-  margin-bottom: 30px;
+  margin-bottom: 7%;
 }
 
 section#izquierda table {
@@ -262,30 +270,25 @@ section#medio_dos section#derecha #ejemplos {
   line-height: 150px;
 }
 
-
-li {
-  margin-right: 10px;
-}
-
 section#propi #ejemplos {
   -webkit-text-stroke: 1px #464EF0;
   color: transparent;
   text-align: left;
-  margin-left: 500px;
+  margin-left: 40%;
 }
 
 section#ides #ejemplos {
   -webkit-text-stroke: 1px #26B712;
   color: transparent;
   text-align: left;
-  margin-left: 500px;
+  margin-left: 40%;
 }
 
 section#clases #ejemplos {
   -webkit-text-stroke: 1px #A22230;
   color: transparent;
   text-align: left;
-  margin-left: 500px;
+  margin-left: 40%;
 }
 
 footer#page_footer {
@@ -298,7 +301,7 @@ color: white;
  font-family: "monospace", serif;
 }
 
-@media screen and (max-width:900px ){
+@media screen and (max-width:1100px ){
   .principal {
     text-align: center;
   }
@@ -309,13 +312,24 @@ color: white;
       margin-right: 0px;
       text-align: center;
   }
-
   section {
     width: 100%;
+    margin: 0px auto;
+    display: block;
   }
   section#sidebar {
     display: flex;
-    width: 90%;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 2%;
+  }
+  section#sidebar ul, section#sidebar li, section#sidebar a {
+    text-align: left;
+    font-size: 99%;
+    width: 100%;
+    margin: 0px;
+    display: inline-block;
   }
   section#basico .esqueleto {
     width: 100%;
@@ -329,6 +343,19 @@ color: white;
   }
   section#basico .esqueleto_img {
     width: 90%;
+  }
+  section#basico section#derecha {
+    margin-bottom: 8%;
+    text-align: left;
+  }
+  section#basico section#izquierda {
+    margin-bottom: 8%;
+    text-align: left;
+  }
+  section#izquierda ul {
+    display: block;
+    text-align: left;
+    margin: 0px;
   }
   section#basico section#izquierda p {
     font-size: 90%;
@@ -374,7 +401,6 @@ color: white;
       margin: 0px;
       margin-bottom: 0px;
   }
-
   section#medio_dos section#izquierda {
     width: 100%;
     margin: 0px auto;
@@ -383,16 +409,16 @@ color: white;
   section#propi #ejemplos {
     font-size: 96%;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 2%;
   }
   section#ides #ejemplos {
     font-size: 96%;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 2%;
   }
   section#clases #ejemplos {
     font-size: 96%;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 2%;
   }
 }
